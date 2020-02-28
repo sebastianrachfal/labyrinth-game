@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/css/roboto.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/lib/jquery.js"></script>
+    <script src="/lib/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+
+    <script src="/js/__maze_data.js"></script>
+    <script src="/js/Ball.js"></script>
+    <script src="/js/Wall.js"></script>
+    <script src="/js/Maze.js"></script>
+    <script src="/js/Controls.js"></script>
+    <script src="/js/Game.js"></script>
+    <script src="/js/Ui.js"></script>
+    <script src="/js/Net.js"></script>
+    <script src="/js/Main.js"></script>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="root"></div>
+        <div id="overlay">
+            <div class="block">
+                <h4>Kliknij 'szukaj gry', aby zacząć!</h4>
+                <button id="search">Szukaj gry</button>
+            </div>
+        </div>
+        <div id="info" style="display: none">
+            w a s d - poruszanie
+            <br> shift - przyśpieszenie
+        </div>
+        <div id="time"></div>
+    </div>
+</body>
+
+</html>
